@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minesweeper Classic</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header class="game-header">
+            <div class="difficulty-container">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="expert">Expert</option>
+                </select>
+            </div>
+            
+            <div class="score-display">
+                <span class="icon">🚩</span>
+                <span id="mine-count">010</span>
+            </div>
+            
+            <button id="reset-btn" class="reset-btn">🙂</button>
+            
+            <div class="timer-display">
+                <span class="icon">⏱️</span>
+                <span id="timer">000</span>
+            </div>
+        </header>
+        
+        <main class="game-board-container">
+            <div id="game-board" class="game-board"></div>
+        </main>
+        
+        <div id="game-message" class="game-message" aria-live="polite"></div>
+    </div>
+    
+    <script src="src/ui.js"></script>
+</body>
+</html>
